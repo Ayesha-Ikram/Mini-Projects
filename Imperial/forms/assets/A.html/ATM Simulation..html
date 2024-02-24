@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ATM Simulation</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    #atm-container {
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    input {
+      width: 80%;
+      padding: 10px;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    button {
+      width: 80%;
+      padding: 10px;
+      font-size: 16px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<div id="atm-container">
+  <h2>ATM Simulation</h2>
+  <label for="pin">Enter PIN:</label>
+  <input type="password" id="pin" maxlength="4">
+  <br>
+  <button onclick="checkPin()">Submit</button>
+  <div id="output"></div>
+</div>
+
+<script>
+  const correctPin = "1234";
+
+  function checkPin() {
+    const enteredPin = document.getElementById('pin').value;
+
+    if (enteredPin === correctPin) {
+     alert('Login Successfully');
+
+      // Reroute to the dashboard after a delay (e.g., 2 seconds)
+      delay(() => {
+        rerouteToDashboard();
+      }, 500);
+    } else {
+    alert('Login Failed Please try again');
+
+      // Reload the page after displaying the message
+      delay(() => {
+        window.location.reload();
+      }, 500);
+    }
+  }
+
+  function displayMessage(message) {
+    document.getElementById('output').innerText = message;
+  }
+
+  function rerouteToDashboard() {
+    // Simulate a reroute by navigating to a new page or performing other actions
+    window.location.href = "atm.html";
+  }
+
+  function delay(callback, milliseconds) {
+    setTimeout(callback, milliseconds);
+  }
+</script>
+
+</body>
+</html>
+

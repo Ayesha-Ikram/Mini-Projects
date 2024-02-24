@@ -1,0 +1,206 @@
+/*-----body-----*/
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    border: border-box;
+}
+/*-----For Navbar-----*/
+.navbar{
+    height: 60px;
+    width: 100%;
+    background-color: #0f1111;
+    color: white;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+/*--------For Logo 1 div banai nav-logo k nam sy jis k under hm ne backgraound image rakhi h.-------*/
+.nav-logo{
+    height: 50px;
+    width: 100px;
+}
+/*------is div me hm ne background image set ki h.------*/
+.logo{
+    background-image: url(amazonlogo.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 50px;
+    }
+/*----- is sy jb hm scroll kry gy cheezon ko to us pe ak border set ho jsye ga.------*/
+.border{
+    border: 1.5px solid transparent;
+}
+.border:hover{
+    border: 1.5px solid white;
+}
+/*------ For Location------*/
+.add-first{
+    font-size: 0.9rem;
+    color: #cccccc;
+    margin-left:10px;
+}
+.add-second{
+    font-size: 1rem;
+    margin-left: 5px;
+}
+.select-icon{
+    display: flex;
+    align-items: center;
+    margin-left:9px ;
+}
+/*------For Search Button------*/
+.nav-search{
+    display:flex;
+    justify-content: space-evenly;
+    border-radius: 4px;
+background-color: white;
+    width: 620px;
+    height: 40px;
+    }
+    .nav-search:hover{
+        border: 2px solid orangered;
+    }
+    .search-select{
+        background-color: #f3f3f3 ;
+        text-align:center ;
+        width: 50px;
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+        border: none;
+    }
+    .input-search{
+        width: 100%;
+        font-size: 1rem;
+        border: none;
+    }
+    .select-icon{
+        width: 45px;
+        background-color: orangered;
+        display: flex;
+        justify-content: center;
+        font-size: 2rem;
+        color: #0f1111;
+    
+    }
+    /*-----Nav-Sign-----*/
+    span{
+font-size: 0.7rem;
+    }
+    .nav-second{
+        font-size: 0.85rem;
+        font-weight: 700px;
+    }
+    /*------Cart------*/
+    .nav-cart ion-icon
+    {
+        font-size:30px;
+       
+    }
+    .nav-cart{
+        font-size: 0.85rem;
+        font-weight: 700px;
+    }
+    /*--------Panel------*/
+    .panel{
+        height: 50px;
+        background-color:  #222f3d;
+        display: flex;
+        color: white;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .panel-ops p{
+        display: inline;
+        margin-left: 10px;
+    }
+    .panel-ops{
+        width: 70%;
+        font-size: 0.85rem;
+    }
+    .panel-deals p{
+       font-size: 0.9rem;
+       font-weight: 700px;
+    }
+    /*-------hero section------*/
+    .hero-section{
+        background-image: url(1.jpg);
+        background-size: cover;
+        height: 400px;
+
+    }
+    /*------shop section------*/
+    .shop-section{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        background-color: #e2e7e6;
+    }
+    .box{
+        height: 400px;
+        border: 2px solid black;
+        width: 20%;
+        background-color: white;
+        
+        margin: 10px 10px 5px 5px;
+        padding: 35px 20px 35px 20px;
+        
+    }
+.box-image{
+    height: 350px;
+    
+}
+a{
+    text-decoration: none;
+}
+.font{
+    font-size: 20px;
+}
+/*-----footer-----*/
+footer{
+    margin-top: 15px;
+}
+.foot-panel1{
+    height: 40px;
+    width: 100%;
+    background-color:#37475a;
+    color: white;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 0.85rem;
+   
+}
+.foot-panel2{
+    background-color: #222f3d;
+    height: 300px;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 20px;
+}
+ul a{
+    display: block;
+    font-size: 0.85rem;
+    margin-top: 10px;
+    color: #dddddd;
+   
+}
+.foot-panel3{
+    background-color: #222f3d;
+    color: white;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.copy-right{
+    background-color:#131A22;
+    color: white;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    font-size: 0.85rem;
+    padding-top: 10px;
+}
